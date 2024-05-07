@@ -1,0 +1,83 @@
+body{
+    background-color: #F4F5FA;
+}
+
+.login-usuaio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.login-usuaio form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+.login-usuaio .errorlist{
+    color: rgb(255, 76, 81);
+}
+/* Estilizar os inputs */
+.login-usuaio input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilizar o botão */
+.login-usuaio button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-usuaio button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* css cadastro */
+
+.resgistro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.resgistro form {
+    background-color: #ffffff;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.resgistro input{
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.resgistro button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resgistro  button:hover {
+    background-color: #0056b3;
+    color: #F4F5FA;
+}

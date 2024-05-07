@@ -4,5 +4,24 @@
 
 {% block content %}
 
-      <h1>ola mundo</h1>
+      <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{% static 'img/01.jpg' %}" alt="">
+            <h1>óla mundo</h1>
+
+            {% if user.is_authenticated %}
+            <p>Olá, {{ user.username }}!</p>
+            <form method="post" action="{% url 'logalt' %}">
+              {% csrf_token %}
+              <button type="submit">Deslogar</button>
+            </form>
+          {% else %}
+            <a href="{% url 'login' %}">Login</a>
+          {% endif %}
+
+  
+        </div>
+    </div>
+</div>
 {% endblock content %}

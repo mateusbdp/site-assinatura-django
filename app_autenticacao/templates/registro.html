@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} registro {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            
+            <div class="resgistro">
+            <form action="{% url 'registro' %}" method="post"> {% csrf_token %}
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu endereço de email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn  mt-3">cadastrar</button>
+            </form>
+        </div>
+
+        </div>
+    </div>
+</div>
+    
+{% endblock content %}
