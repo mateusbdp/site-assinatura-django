@@ -23,7 +23,8 @@
                     <p class="card-text">{{ assinatura.descricao }} </p>
                     <p class="card-text">{{ assinatura.preco }} </p>
                     <p class="card-text">{{ assinatura.duracao_meses }} meses</p>
-                    <a href="#" class="btn btn-primary">comprar</a>
+                    <a href="{% url 'pagamento' assinatura.id %}" class="btn btn-primary">comprar</a>
+                    
                 </div>
             </div>
 
